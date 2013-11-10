@@ -1,0 +1,13 @@
+== Description ==
+The Branding DMS section lets you display a custom Site Logo on your DMS site. It's inspired by the retired "Branding" section that was included in the PageLines v2 Framework. All of the functionality from v2's "Branding" section is back in Branding DMS, as well as some new features. I've added a bunch more social icons for you to use along with the original ones from v2's Branding section. They include RSS, Google+, Facebook, Twitter, LinkedIn, YouTube, Vimeo, Pinterest, Instagram, StumbleUpon, Tumblr, Flickr, Etsy, & Bloglovin. Do you need an icon that's not on this list? No problem! Just upload your own custom icon image and specify the link. You can set a custom size for all the icons, and even rearrange the order of your custom icons. Would you rather not deal with image files? No problem! You can use Font Awesome Icons instead! Just select the icon you want from the dropdown, and choose a custom icon color. You can also specify the size of your Font Awesome icons as well.
+
+<h3>Features</h3>
+<ul>
+<li>Display your Custom Logo/Site Title</li>
+<li>Add Social Icons to your site. Use either v2 legacy icons, upload your own custom icons, or use Font Awesome icons</li>
+<li>Inspired by the retired “Branding” section from PageLines v2 Framework</li>
+</ul>
+== Changelog ==
+
+= 1.0.0 =
+* Initial release

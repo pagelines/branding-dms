@@ -1,0 +1,77 @@
+.section-branding-dms{
+	.content{
+		z-index:10;
+	}
+	
+	a.site-title-link{
+		display: block;
+		margin: .3em 0 .15em;
+		padding-left:8px;
+		font-size: 2.6em;
+		line-height: 1.1em;
+		font-weight:700;
+		color: @textColor;
+	}
+	a.site-title-link:hover{
+		color: @pl-link;
+		}
+	
+	.site-description {
+		margin-left: .2em;
+		padding-left: 8px;
+		font-size: 86%;
+		color: @textColorAlt;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.branding_wrap{
+		position: relative;
+		zoom: 1;
+	}
+	.site-logo-link, .site-logo-img{
+		max-width: 100%;
+		display: block;
+	}
+	.icons{
+		text-align: right;
+		position: absolute;
+		bottom: 50%;
+		right: 0px;
+		line-heightt: @icon-size - 4px;
+		height: @icon-size;
+		a{
+			display: block;
+			widtht: @icon-size;
+			heightt: @icon-size;
+			margin-left: 8px;
+			float: right;
+			text-align: right;
+			opacity: 0.5;
+			img{
+				width:@icon-size;
+			}
+		}
+	}
+	[class*='icon-'] {
+	padding-top:2px;
+	}
+}
+@media screen and (max-width:600px) {
+	.section-branding-dms{
+		.icons {
+			position: static;
+			a {
+				width:24px;
+				heightt:24px;
+				img {
+					margin-top: 5px;
+					width:24px;
+					height:auto;
+					}	
+				} 
+			}
+		[class*='icon-'] {	
+			margin-top: 5px;
+		}
+	}
+}
