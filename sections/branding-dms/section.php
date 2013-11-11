@@ -91,7 +91,7 @@ class BrandingDMS extends PageLinesSection {
 					array(
 						'key'		=> 'rssicon',	
 						'type' 		=> 'check',
-						'label'		=> __( '<i class="icon-rss-sign icon-large"></i> Hide RSS feed icon', 'branding-dms' ),
+						'label'		=> __( 'Hide RSS feed icon', 'branding-dms' ),
 					));
 			if(!pl_setting('rssicon')) {	
 				$social_b = array(
