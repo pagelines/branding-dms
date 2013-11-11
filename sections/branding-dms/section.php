@@ -28,7 +28,7 @@ class BrandingDMS extends PageLinesSection {
 		}
 			
 		function Social_Icon_Help(){
-		    	ob_start();?><div class="opt-name"><?php _e( 'Upload your own custom icons', 'branding-dms' );?></div><?php _e( 'For best results, use an image with a 1:1 ratio.', 'branding-dms' ); return ob_get_clean();
+		    	ob_start();?><?php _e( '<div class="opt-name">Upload your own custom icons</div>For best results, use an image with a 1:1 ratio.', 'branding-dms' ); return ob_get_clean();
 		}
 		
 		function add_site_logo( $array ) {
@@ -48,7 +48,7 @@ class BrandingDMS extends PageLinesSection {
 		}
 		
 		function addlinkheader(){
-		    	ob_start();?><div class="opt-name"><?php _e( 'Add URLs to activate icons', 'branding-dms' );?></div><?php return ob_get_clean();
+		    	ob_start();?><?php _e( '<div class="opt-name">Add URLs to activate icons</div>', 'branding-dms' );?><?php return ob_get_clean();
 		}
 		
 		function add_social_icons( $array ) {
@@ -295,7 +295,7 @@ class BrandingDMS extends PageLinesSection {
 		}
 		
 		function instructions(){
-		    ob_start();?><?php _e( 'You', 'branding-dms' );?>'<?php _e( 'll now see the new ', 'branding-dms' );?><strong>"<?php _e( 'Branding Logo', 'branding-dms' );?>"</strong><?php _e( ' option on the ', 'branding-dms' );?><a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=basic_settings"><i class="icon-picture icon-large"></i> <?php _e( 'Site Images', 'branding-dms' );?></a><?php _e( ' tab inside your <i class="icon-globe icon-large"></i> Settings. Use this setting to upload a default Branding Logo.', 'branding-dms' );?><br /><br /><?php _e( 'You can also add ', 'branding-dms' );?><strong><?php _e( 'Social Icons', 'branding-dms' );?></strong><?php _e( ' to the Branding image. Go to the ', 'branding-dms' );?><a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=social_media"><i class="icon-comments icon-large"></i> <?php _e( 'Social ', 'branding-dms' );?>&amp;<?php _e( ' Local', 'branding-dms' );?></a><?php _e( ' Settings to configure.', 'branding-dms' );?><hr /><hr /><?php return ob_get_clean();
+		    ob_start();?><?php _e( 'You&#39;ll now see the new <strong>"Branding Logo"</strong> option on the <a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=basic_settings"><i class="icon-picture icon-large"></i>Site Images</a> tab inside your <i class="icon-globe icon-large"></i> Settings. Use this setting to upload a default Branding Logo.<br /><br /> You can also add <strong>Social Icons</strong> to the Branding image. Go to the <a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=social_media"><i class="icon-comments icon-large"></i> Social &amp; Local</a> Settings to configure.<hr /><hr />', 'branding-dms' ); return ob_get_clean();
 		}
 	
 		function section_opts(){
