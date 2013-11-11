@@ -302,7 +302,7 @@ class BrandingDMS extends PageLinesSection {
 				$options = array();
 				$Instructions = array(
 					array(
-						'title' 	=> __( 'Instructions', 'featured-branding-dms' ),
+						'title' 	=> __( 'Instructions', 'branding-dms' ),
 						'key'		=> 'welcome',			
 						'type'		=> 'template',
 						'template'	=> $this->instructions()
