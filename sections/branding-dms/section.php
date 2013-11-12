@@ -317,9 +317,7 @@ class BrandingDMS extends PageLinesSection {
 			} else { 
 				$Hide_RSS_Icon = array(); 
 			}
-			
-				$custom_images_array = $this->opt('custom_images_array');
-						
+									
 				$Hide_Social_Icons = array(
 					array(
 						'key'		=> 'hidesocialicons',
@@ -337,7 +335,7 @@ class BrandingDMS extends PageLinesSection {
 				return $options;
 		}	
 
-		function dms_main_logo(){
+		function branding_mode(){
 			if ( pl_setting( 'dms_main_logo' ) )  {
 				$logo = ($this->opt('dms_main_logo')) ? $this->opt('dms_main_logo') : '';
 				$site_logo = sprintf( '<a class="home site-logo-link" href="%s" title="%s"><img class="site-logo-img" src="%s" alt="%s" /></a>', home_url(), get_bloginfo('name'), $logo, get_bloginfo('name'));
@@ -525,7 +523,7 @@ class BrandingDMS extends PageLinesSection {
 		function section_template() { 
 					 	
 				printf('<div class="branding_wrap fix">');
-				$this->dms_main_logo(); 
+				$this->branding_mode(); 
 				$this->social_icons();
 				echo '</div>';
 	
