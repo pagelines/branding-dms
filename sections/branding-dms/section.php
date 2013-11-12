@@ -295,7 +295,7 @@ class BrandingDMS extends PageLinesSection {
 		}
 		
 		function instructions(){
-		    ob_start();?><?php _e( 'You&#39;ll now see the new <strong>"Main Site Logo"</strong> option in the <a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=basic_settings"><i class="icon-picture icon-large"></i>Site Images</a> tab inside your <i class="icon-globe icon-large"></i> Settings. Use this setting to upload a default Branding Logo.<br /><br /> You can also add <strong>Social Icons</strong> to the Branding image. Go to the <a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=social_media"><i class="icon-comments icon-large"></i> Social &amp; Local</a> Settings to configure.<hr /><hr />', 'branding-dms' ); return ob_get_clean();
+		    ob_start();?><?php _e( 'You&#39;ll now see the new <strong>"Main Site Logo"</strong> option in the <a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=basic_settings"><i class="icon-picture icon-large"></i> Site Images</a> tab inside your <i class="icon-globe icon-large"></i> Settings. Use this setting to upload a default Branding Logo.<br /><br /> You can also add <strong>Social Icons</strong> to the Branding image. Go to the <a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=social_media"><i class="icon-comments icon-large"></i> Social &amp; Local</a> Settings to configure.<hr /><hr />', 'branding-dms' ); return ob_get_clean();
 		}
 	
 		function section_opts(){
