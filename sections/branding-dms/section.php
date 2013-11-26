@@ -98,8 +98,8 @@ class BrandingDMS extends PageLinesSection {
 					array(
 						'key'		=> 'rsslink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Custom RSS feed link', 'branding-dms' ),
 						'help'		=> __( 'If you want the RSS icon to link to a feed other than your website, enter the custom URL here. Otherwise just leave this blank.', 'branding-dms' ),
+						'label'		=> __( 'Custom RSS feed link', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'hr',			
