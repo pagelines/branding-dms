@@ -91,7 +91,7 @@ class BrandingDMS extends PageLinesSection {
 					array(
 						'key'		=> 'rssicon',	
 						'type' 		=> 'check',
-						'label'		=> __( 'Hide RSS feed icon', 'branding-dms' ),
+						'label'		=> __( 'Hide RSS feed icon', 'branding-dms' )
 					));
 			if(!pl_setting('rssicon')) {	
 				$social_b = array(
@@ -113,8 +113,8 @@ class BrandingDMS extends PageLinesSection {
 					array(
 						'key'		=> 'iconfontsize',	
 						'type' 		=> 'text',
-						'default'	=> '27',
 						'label'		=> __( 'Icon font-size in pixels. Default is 27px', 'branding-dms' ),
+						'default'	=> '27'
 					),
 					array(
 						'key'		=> 'hr',			
@@ -124,26 +124,26 @@ class BrandingDMS extends PageLinesSection {
 					array(
 						'key'		=> 'rssicon',	
 						'type' 		=> 'check',
-						'label'		=> __( 'Hide RSS feed icon', 'branding-dms' ),
+						'label'		=> __( 'Hide RSS feed icon', 'branding-dms' )
 					));
 			if(!pl_setting('rssicon')) {	
 				$social_b = array(
 					array(
 						'key'		=> 'rsslink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Custom RSS feed link', 'branding-dms' ),
 						'help'		=> __( 'If you want the RSS icon to link to a feed other than your website, enter the custom URL here. Otherwise just leave this blank.', 'branding-dms' ),
+						'label'		=> __( 'Custom RSS feed link', 'branding-dms' )
 					),
 					array(
-					    'key'   => 'rssiconselect',
-						'type'  => 'select_icon',
-						'default'	=> 'rss-sign',
-						'label'	=> __( 'RSS Icon', 'branding-dms' ),
+					    'key'		=> 'rssiconselect',
+						'type' 		=> 'select_icon',
+						'label'		=> __( 'RSS Icon', 'branding-dms' ),
+						'default'	=> 'rss-sign'
 					),
 					array(
-						'key'	=> 'rssiconcolor',
-						'type' 	=> 'color',					
-						'label' => __( 'RSS icon color', 'branding-dms' ),
+						'key'		=> 'rssiconcolor',
+						'type'		=> 'color',					
+						'label'		=> __( 'RSS icon color', 'branding-dms' ),
 						'default'	=> 'f68727'
 					),
 					array(
@@ -165,67 +165,67 @@ class BrandingDMS extends PageLinesSection {
 					array(
 						'key'		=> 'gpluslink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your Google+ Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your Google+ Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'facebooklink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your Facebook Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your Facebook Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'twitterlink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your Twitter Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your Twitter Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'linkedinlink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your LinkedIn Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your LinkedIn Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'youtubelink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your YouTube Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your YouTube Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'vimeolink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your Vimeo Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your Vimeo Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'pinterestlink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your Pinterest Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your Pinterest Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'instagramlink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your Instagram Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your Instagram Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'stumbleuponlink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your StumbleUpon Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your StumbleUpon Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'tumblrlink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your Tumblr Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your Tumblr Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'flickrlink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your Flickr Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your Flickr Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'etsylink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your Etsy Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your Etsy Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'bloglovinlink',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Your Bloglovin Profile URL', 'branding-dms' ),
+						'label'		=> __( 'Your Bloglovin Profile URL', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'socialhelp',			
@@ -302,9 +302,9 @@ class BrandingDMS extends PageLinesSection {
 				$options = array();
 				$Instructions = array(
 					array(
-						'title' 	=> __( 'Instructions', 'branding-dms' ),
 						'key'		=> 'welcome',			
 						'type'		=> 'template',
+						'title' 	=> __( 'Instructions', 'branding-dms' ),
 						'template'	=> $this->instructions()
 					));
 			if(!pl_setting('rssicon')) 	{
@@ -312,7 +312,7 @@ class BrandingDMS extends PageLinesSection {
 					array(
 						'key'		=> 'hiderssfeedicon',
 						'type' 		=> 'check',
-						'label'		=> __( 'Hide RSS Feed icon', 'branding-dms' ),
+						'label'		=> __( 'Hide RSS Feed icon', 'branding-dms' )
 					));
 			} else { 
 				$Hide_RSS_Icon = array(); 
@@ -322,7 +322,7 @@ class BrandingDMS extends PageLinesSection {
 					array(
 						'key'		=> 'hidesocialicons',
 						'type' 		=> 'check',
-						'label'		=> __( 'Hide social icons', 'branding-dms' ),
+						'label'		=> __( 'Hide social icons', 'branding-dms' )
 					));
 					
 				$Instructions_and_Hide_RSS_Icon = array_merge( $Instructions, $Hide_RSS_Icon );
