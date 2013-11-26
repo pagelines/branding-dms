@@ -33,12 +33,12 @@ class BrandingDMS extends PageLinesSection {
 		
 		function add_site_logo( $array ) {
 	            $array['basic_settings']['opts'][] = array(
-						'title' 	=> __( 'Main Site Logo', 'branding-dms' ),
-						'default' 	=> '[pl_parent_url]/images/dms.png',
-						'key'		=> 'dms_main_logo',	
+						'key'		=> 'dms_main_logo',
 						'type' 		=> 'image_upload',
-						'label'		=> __( 'Upload site logo', 'branding-dms' ),
 						'help'		=> __( 'This is your default custom header/site logo image', 'branding-dms' ),
+						'title' 	=> __( 'Main Site Logo', 'branding-dms' ),
+						'label'		=> __( 'Upload site logo', 'branding-dms' ),
+						'default' 	=> '[pl_parent_url]/images/dms.png'
 				);
 	        	return $array;
 		}
@@ -56,23 +56,23 @@ class BrandingDMS extends PageLinesSection {
 					array(
 						'key'		=> 'icon_pos_bottom',	
 						'type' 		=> 'text',
-						'default' 	=> '12',
-						'label'		=> __( 'Icon distance from bottom in pixels. Default is 12px.', 'branding-dms' )
+						'label'		=> __( 'Icon distance from bottom in pixels. Default is 12px.', 'branding-dms' ),
+						'default' 	=> '12'
 					),
 					array(
 						'key'		=> 'icon_pos_right',	
 						'type' 		=> 'text',
-						'default' 	=> '1',
 						'label'		=> __( 'Icon distance from right in pixels. Default is 1px.', 'branding-dms' ),
+						'default' 	=> '1'
 					),
 					array(
 						'key'		=> 'iconmode',
 						'type' 		=> 'select',
-						'default'	=> __( 'images', 'branding-dms' ),							
 						'label'		=> __( 'Select icon type (then refresh)', 'branding-dms' ),
+						'default'	=> __( 'images', 'branding-dms' ),							
 						'opts'		=> array(
-									'images'		=> array( 'name' => __( 'Images', 'branding-dms' ) ),
-									'iconfont'	 	=> array( 'name' => __( 'Font Awesome Icons', 'branding-dms' ) ),
+											'images'		=> array( 'name' => __( 'Images', 'branding-dms' ) ),
+											'iconfont'	 	=> array( 'name' => __( 'Font Awesome Icons', 'branding-dms' ) )
 						)));
 				$iconmode = ($this->opt('iconmode')) ? $this->opt('iconmode') : 'images';
 			
@@ -81,7 +81,7 @@ class BrandingDMS extends PageLinesSection {
 					array(
 						'key'		=> 'iconimagesize',	
 						'type' 		=> 'text',
-						'label'		=> __( 'Custom icon size in pixels. Default is 24px', 'branding-dms' ),
+						'label'		=> __( 'Custom icon size in pixels. Default is 24px', 'branding-dms' )
 					),
 					array(
 						'key'		=> 'hr',			
@@ -295,7 +295,7 @@ class BrandingDMS extends PageLinesSection {
 		}
 		
 		function instructions(){
-		    ob_start();?><?php _e( 'You&#39;ll now see the new <strong>"Main Site Logo"</strong> option in the <a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=basic_settings"><i class="icon-picture icon-large"></i> Site Images</a> tab inside your <i class="icon-globe icon-large"></i> Settings. Use this setting to upload a default Branding Logo.<br /><br /> You can also add <strong>Social Icons</strong> to the Branding image. Go to the <a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=social_media"><i class="icon-comments icon-large"></i> Social &amp; Local</a> Settings to configure.<hr /><hr />', 'branding-dms' ); return ob_get_clean();
+		    ob_start();?><?php _e( 'You&#39;ll now see the new <strong>"Main Site Logo"</strong> option in the ', 'branding-dms' )?><a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=basic_settings"> <i class="icon-picture icon-large"></i> <?php _e( 'Site Images</a> tab inside your <i class="icon-globe icon-large"></i> Settings. Use this setting to upload a default Branding Logo.<br /><br /> You can also add <strong>Social Icons</strong> to the Branding image. Go to the ', 'branding-dms' )?><a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=social_media"> <i class="icon-comments icon-large"></i>  <?php _e( 'Social &amp; Local</a> Settings to configure.<hr /><hr />', 'branding-dms' ); return ob_get_clean();
 		}
 	
 		function section_opts(){
