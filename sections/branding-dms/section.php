@@ -6,7 +6,7 @@
 	Demo: http://branding-dms.MrFent.com
 	Description: Shows the main site logo/title and social icons.
 	Class Name: BrandingDMS
-	Version: 1.0.0  
+	Version: 1.0.1  
 	Workswith: header 
 	Filter: component, social
 	PageLines: true
@@ -74,7 +74,7 @@ class BrandingDMS extends PageLinesSection {
 											'images'		=> array( 'name' => __( 'Images', 'branding-dms' ) ),
 											'iconfont'	 	=> array( 'name' => __( 'Font Awesome Icons', 'branding-dms' ) )
 						)));
-				$iconmode = ($this->opt('iconmode')) ? $this->opt('iconmode') : 'images';
+				$iconmode = (pl_setting('iconmode')) ? pl_setting('iconmode') : 'images';
 			
 			if ($iconmode == 'images') {	
 				$icon_size_rss = array(		
@@ -337,7 +337,7 @@ class BrandingDMS extends PageLinesSection {
 
 		function branding_mode(){
 			if ( pl_setting( 'dms_main_logo' ) )  {
-				$logo = ($this->opt('dms_main_logo')) ? $this->opt('dms_main_logo') : '';
+				$logo = pl_setting('dms_main_logo');
 				$site_logo = sprintf( '<a class="home site-logo-link" href="%s" title="%s"><img class="site-logo-img" src="%s" alt="%s" /></a>', home_url(), get_bloginfo('name'), $logo, get_bloginfo('name'));
 				echo $site_logo;
 			} else {
@@ -367,45 +367,45 @@ class BrandingDMS extends PageLinesSection {
 		if (!$this->opt('hidesocialicons')){ 
 	
 		if ( pl_setting( 'twitterlink' ) ) 
-			printf('<a target="_blank" href="%s" class="twitterlink" title="Twitter"><img src="%s" alt="Twitter"/></a>', $this->opt( 'twitterlink' ), $this->base_url.'/icons/twitter.png');
+			printf('<a target="_blank" href="%s" class="twitterlink" title="Twitter"><img src="%s" alt="Twitter"/></a>', pl_setting( 'twitterlink' ), $this->base_url.'/icons/twitter.png');
 		
 		if ( pl_setting( 'facebooklink' ) ) 
-			printf('<a target="_blank" href="%s" class="facebooklink" title="Facebook"><img src="%s" alt="Facebook"/></a>', $this->opt( 'facebooklink' ), $this->base_url.'/icons/facebook.png');
+			printf('<a target="_blank" href="%s" class="facebooklink" title="Facebook"><img src="%s" alt="Facebook"/></a>', pl_setting( 'facebooklink' ), $this->base_url.'/icons/facebook.png');
 		
 		if(pl_setting('linkedinlink'))
-			printf('<a target="_blank" href="%s" class="linkedinlink" title="LinkedIn"><img src="%s" alt="LinkedIn"/></a>', $this->opt( 'linkedinlink' ), $this->base_url.'/icons/linkedin.png');	
+			printf('<a target="_blank" href="%s" class="linkedinlink" title="LinkedIn"><img src="%s" alt="LinkedIn"/></a>', pl_setting( 'linkedinlink' ), $this->base_url.'/icons/linkedin.png');	
 		
 		if(pl_setting('youtubelink'))
-			printf('<a target="_blank" href="%s" class="youtubelink" title="YouTube"><img src="%s" alt="Youtube"/></a>', $this->opt( 'youtubelink' ), $this->base_url.'/icons/youtube.png');
+			printf('<a target="_blank" href="%s" class="youtubelink" title="YouTube"><img src="%s" alt="Youtube"/></a>', pl_setting( 'youtubelink' ), $this->base_url.'/icons/youtube.png');
 		
 		if(pl_setting('vimeolink'))
-			printf('<a target="_blank" href="%s" class="vimeolink" title="Vimeo"><img src="%s" alt="Vimeo"/></a>', $this->opt( 'vimeolink' ), $this->base_url.'/icons/vimeo.png');
+			printf('<a target="_blank" href="%s" class="vimeolink" title="Vimeo"><img src="%s" alt="Vimeo"/></a>', pl_setting( 'vimeolink' ), $this->base_url.'/icons/vimeo.png');
 		
 		if(pl_setting('gpluslink'))
-			printf('<a target="_blank" href="%s" class="gpluslink" title="Google+"><img src="%s" alt="Google+"/></a>', $this->opt( 'gpluslink' ), $this->base_url.'/icons/google.png');			
+			printf('<a target="_blank" href="%s" class="gpluslink" title="Google+"><img src="%s" alt="Google+"/></a>', pl_setting( 'gpluslink' ), $this->base_url.'/icons/google.png');			
 		
 		if ( pl_setting( 'pinterestlink' ) ) 
-			printf('<a target="_blank" href="%s" class="pinterestlink" title="Pinterest"><img src="%s" alt="Pinterest"/></a>', $this->opt( 'pinterestlink' ), $this->base_url.'/icons/pinterest.png');
+			printf('<a target="_blank" href="%s" class="pinterestlink" title="Pinterest"><img src="%s" alt="Pinterest"/></a>', pl_setting( 'pinterestlink' ), $this->base_url.'/icons/pinterest.png');
 					
 		if ( pl_setting( 'instagramlink' ) ) 
-			printf('<a target="_blank" href="%s" class="instagramlink" title="Instagram"><img src="%s" alt="Instagram"/></a>', $this->opt( 'instagramlink' ), $this->base_url.'/icons/instagram.png');	
+			printf('<a target="_blank" href="%s" class="instagramlink" title="Instagram"><img src="%s" alt="Instagram"/></a>', pl_setting( 'instagramlink' ), $this->base_url.'/icons/instagram.png');	
 									
 		if ( pl_setting( 'tumblrlink' ) ) 
-			printf('<a target="_blank" href="%s" class="tumblrlink" title="Tumblr"><img src="%s" alt="Tumblr"/></a>', $this->opt( 'tumblrlink' ), $this->base_url.'/icons/tumblr.png');	
+			printf('<a target="_blank" href="%s" class="tumblrlink" title="Tumblr"><img src="%s" alt="Tumblr"/></a>', pl_setting( 'tumblrlink' ), $this->base_url.'/icons/tumblr.png');	
 		
 		if(pl_setting('etsylink'))
-			printf('<a target="_blank" href="%s" class="etsylink" title="Etsy"><img src="%s" alt="Etsy"/></a>', $this->opt( 'etsylink' ), $this->base_url.'/icons/etsy.png');								
+			printf('<a target="_blank" href="%s" class="etsylink" title="Etsy"><img src="%s" alt="Etsy"/></a>', pl_setting( 'etsylink' ), $this->base_url.'/icons/etsy.png');								
 	
 		if(pl_setting('flickrlink'))
-			printf('<a target="_blank" href="%s" class="flickrlink" title="Flickr"><img src="%s" alt="Flickr"/></a>', $this->opt( 'flickrlink' ), $this->base_url.'/icons/flickr.png');								
+			printf('<a target="_blank" href="%s" class="flickrlink" title="Flickr"><img src="%s" alt="Flickr"/></a>', pl_setting( 'flickrlink' ), $this->base_url.'/icons/flickr.png');								
 
 		if(pl_setting('bloglovinlink'))
-			printf('<a target="_blank" href="%s" class="bloglovinlink" title="Bloglovin"><img src="%s" alt="Bloglovin"/></a>', $this->opt( 'bloglovinlink' ), $this->base_url.'/icons/bloglovin.png');	
+			printf('<a target="_blank" href="%s" class="bloglovinlink" title="Bloglovin"><img src="%s" alt="Bloglovin"/></a>', pl_setting( 'bloglovinlink' ), $this->base_url.'/icons/bloglovin.png');	
 		
 		if(pl_setting('stumbleuponlink'))
-			printf('<a target="_blank" href="%s" class="stumbleuponlink" title="StumbleUpon"><img src="%s" alt="StumbleUpon"/></a>', $this->opt( 'stumbleuponlink' ), $this->base_url.'/icons/stumbleupon.png');
+			printf('<a target="_blank" href="%s" class="stumbleuponlink" title="StumbleUpon"><img src="%s" alt="StumbleUpon"/></a>', pl_setting( 'stumbleuponlink' ), $this->base_url.'/icons/stumbleupon.png');
 						
-			$custom_images_array = $this->opt('custom_images_array');
+			$custom_images_array = pl_setting('custom_images_array');
 		if( !$custom_images_array || !is_array($custom_images_array) ){
 			$custom_images_array = array( array(), array(), array() );
 		}
@@ -459,7 +459,7 @@ class BrandingDMS extends PageLinesSection {
 
 		if (!$this->opt('hidesocialicons')){
 			
-			$custom_iconfont_array = $this->opt('custom_iconfont_array');
+			$custom_iconfont_array = pl_setting('custom_iconfont_array');
 	
 		if( !$custom_iconfont_array || !is_array($custom_iconfont_array) ){
 			
