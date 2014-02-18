@@ -338,7 +338,7 @@ class BrandingDMS extends PageLinesSection {
 		function branding_mode(){
 			if ( pl_setting( 'dms_main_logo' ) )  {
 				$logo = pl_setting('dms_main_logo');
-				$site_logo = sprintf( '<a class="home site-logo-link" href="%s" title="%s"><img class="site-logo-img" src="%s" alt="%s" /></a>', home_url(), get_bloginfo('name'), $logo, get_bloginfo('name'));
+				$site_logo = sprintf( '<a class="home site-logo-link" href="%s" title="%s"><img class="site-logo-img" src="%s" alt="%s" data-sync="dms_main_logo" /></a>', home_url(), get_bloginfo('name'), $logo, get_bloginfo('name'));
 				echo $site_logo;
 			} else {
 				$site_title = sprintf( '<div class="title-container"><a class="home site-title-link" href="%s" title="%s">%s</a><h6 class="site-description subhead">%s</h6></div>', esc_url(home_url()), __('Home','pagelines'), get_bloginfo('name'), get_bloginfo('description'));
