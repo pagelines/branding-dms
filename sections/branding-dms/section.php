@@ -6,7 +6,7 @@
 	Demo: http://branding-dms.MrFent.com
 	Description: Shows the main site logo/title and social icons.
 	Class Name: BrandingDMS
-	Version: 1.0.1  
+	Version: 1.0.2  
 	Workswith: header 
 	Filter: component, social
 	PageLines: true
