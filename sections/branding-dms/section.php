@@ -6,7 +6,7 @@
 	Demo: http://branding-dms.MrFent.com
 	Description: Shows the main site logo/title and social icons.
 	Class Name: BrandingDMS
-	Version: 1.0.2  
+	Version: 1.1.0  
 	Workswith: header 
 	Filter: component, social
 	PageLines: true
@@ -295,7 +295,7 @@ class BrandingDMS extends PageLinesSection {
 		}
 		
 		function instructions(){
-		    ob_start();?><?php _e( 'You&#39;ll now see the new <strong>"Main Site Logo"</strong> option in the ', 'branding-dms' )?><a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=basic_settings"> <i class="icon-picture icon-large"></i> <?php _e( 'Site Images</a> tab inside your <i class="icon-globe icon-large"></i> Settings. Use this setting to upload a default Branding Logo.<br /><br /> You can also add <strong>Social Icons</strong> to the Branding image. Go to the ', 'branding-dms' )?><a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=social_media"> <i class="icon-comments icon-large"></i>  <?php _e( 'Social &amp; Local</a> Settings to configure.<hr /><hr />', 'branding-dms' ); return ob_get_clean();
+		    ob_start();?><?php _e( 'You&#39;ll now see the new <strong>"Main Site Logo"</strong> option in the ', 'branding-dms' )?><a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=basic_settings"> <i class="icon icon-picture icon-large"></i> <?php _e( 'Site Images</a> tab inside your <i class="icon icon-globe icon-large"></i> Settings. Use this setting to upload a default Branding Logo.<br /><br /> You can also add <strong>Social Icons</strong> to the Branding image. Go to the ', 'branding-dms' )?><a href="<?php site_url() ?>?tablink=settings&amp;tabsublink=social_media"> <i class="icon icon-comments icon-large"></i>  <?php _e( 'Social &amp; Local</a> Settings to configure.<hr /><hr />', 'branding-dms' ); return ob_get_clean();
 		}
 	
 		function section_opts(){
@@ -454,7 +454,7 @@ class BrandingDMS extends PageLinesSection {
 			$rssiconselect = (pl_setting( 'rssiconselect')) ? pl_setting( 'rssiconselect') : 'rss-sign';
 			$rssiconcolor = (pl_setting( 'rssiconcolor')) ? pl_setting( 'rssiconcolor') : 'f68727';
 			
-			printf('<a target="_blank" href="%s" class="rsslink" title="RSS Feed"><i class="icon-%s" style="color:#%s;font-size:%spx;"></i></a>', $rssurl, $rssiconselect, $rssiconcolor, $iconfontsize ); 
+			printf('<a target="_blank" href="%s" class="rsslink" title="RSS Feed"><i class="icon icon-%s" style="color:#%s;font-size:%spx;"></i></a>', $rssurl, $rssiconselect, $rssiconcolor, $iconfontsize ); 
 			}}
 
 		if (!$this->opt('hidesocialicons')){
@@ -503,7 +503,7 @@ class BrandingDMS extends PageLinesSection {
 
 
 		if ((pl_array_get( 'iconfonttitle', $iconfont_array )) || (pl_array_get( 'iconfontlink', $iconfont_array )) || (pl_array_get( 'iconfontselect', $iconfont_array )))
-			printf('<a target="_blank" href="%s" class="%slink" title="%s"><i class="icon-%s" style="color:#%s;font-size:%spx;"></i></a>', $link, $class, $title, $select, $color, $iconfontsize );
+			printf('<a target="_blank" href="%s" class="%slink" title="%s"><i class="icon icon-%s" style="color:#%s;font-size:%spx;"></i></a>', $link, $class, $title, $select, $color, $iconfontsize );
 		}}}
 		
 			pagelines_register_hook( 'branding_dms_icons_end' ); 
